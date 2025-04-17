@@ -1,0 +1,110 @@
+/*Navbar*/
+nav {
+    background-color: #db4e4e; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.mega-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*  Hero */
+.hero-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 2rem;
+  display: none; /* oculto al inicio para la animación */
+  transform: translateY(-40px);
+  transition: all 1s ease;
+  padding: 2rem;
+}
+.overlay.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#hero-overlay h1{
+  color: #db4e4e;
+  font-weight: bolder ;
+}
+#hero-overlay p{
+  color: #db4e4e;
+  font-size: 1.5rem;
+  font-weight: bolder ;  
+}
+
+/* SECCION CARDS */
+  .clase-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* SECCION DE CONTADOR */
+  .counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: crimson;
+  }
+
+  /*Testimonios*/
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px;
+    }
+  }
+
+  /*Footer*/
+footer{
+  margin-top: 30px; !important
+}
+  footer a{
+    text-decoration: none;
+    color: inherit;
+  }

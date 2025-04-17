@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/clases.css">
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Élite Fitness club</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Élite Fitness Club</h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link inactive" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Más</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/clases.html">Clases</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    <li><a class="dropdown-item" href="#">Entrenadores</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" aria-current="page" href="">Blog Fitness</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 class="text-center">Nuestras clases</h2>
+    <div class="container text-center mb-4 btn-group">
+        <div id="filters" class="mb-4">
+            <button class="btn btn-primary filter" data-filter="all">Todas</button>
+            <button class="btn btn-primary filter" data-filter="fuerza">Fuerza</button>
+            <button class="btn btn-primary filter" data-filter="agilidad">Agilidad</button>
+            <button class="btn btn-primary filter" data-filter="cardio">Cardio</button>
+        </div>
+    </div>
+
+    <!--Galeria de imagenes masonry-->
+    
+    <div class="row gallery">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item fuerza">
+            <img src="/assets/img/boxing.jpg" class="img-fluid" alt="Boxeo">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
+            <img src="/assets/img/zumba.jpg" class="img-fluid" alt="zumba1">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
+            <img src="/assets/img/spinning.jpg" class="img-fluid" alt="spinning">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
+            <img src="/assets/img/funcional.jpg" class="img-fluid" alt="funcional">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
+            <img src="assets/img/zumba2.jpg" class="img-fluid" alt="zumba 2">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item agilidad">
+            <img src="assets/img/yoga.jpg" class="img-fluid" alt="yoga">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item agilidad">
+            <img src="assets/img/pilates.jpg" class="img-fluid" alt="pilates">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item fuerza">
+            <img src="assets/img/musculacion.jpg" class="img-fluid" alt="musculacion">
+        </div>
+    </div>
+    
+    <!-- Tabla responsive -->
+          
+    <div class="container mt-4">
+        <h2 class="text-center">Horarios de Clases</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Día</th>
+                <th>08:00</th>
+                <th>10:00</th>
+                <th>12:00</th>
+                <th>16:00</th>
+                <th>18:00</th>
+                <th>20:00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>Yoga</td>
+                <td>Zumba</td>
+                <td></td>
+                <td>Spinning</td>
+                <td>Boxeo</td>
+                <td>Funcional</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td></td>
+                <td>Cardio</td>
+                <td>Musculación</td>
+                <td></td>
+                <td>Boxeo</td>
+                <td>Pilates</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>Yoga</td>
+                <td></td>
+                <td>Spinning</td>
+                <td>Cardio</td>
+                <td>Boxeo</td>
+                <td>Musculación</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>Cardio</td>
+                <td></td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Musculación</td>
+                <td>Boxeo</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>Pilates</td>
+                <td></td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Boxeo</td>
+                <td>Musculación</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Formulario de contacto -->
+                <div class="col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor ingrese un correo válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                            <div class="invalid-feedback">Por favor ingrese un mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Enviar
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"
+                                id="formSpinner"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-md-6 mb-4">
+                    <h5>Ubicación</h5>
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58235.35678862931!2d-65.38668915136715!3d-24.181908299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1744777169372!5m2!1ses!2sar"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="text-center mb-3">
+                <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+                <a href="https://wa.me/5493881234567" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                </a>
+            </div>
+            <hr class="border-light" />
+            <p class="text-center mb-0">&copy; 2025 Ignacio Martín. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/js/clases.js"></script>
+</body>
+</ul>
+</nav>

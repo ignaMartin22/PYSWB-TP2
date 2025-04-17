@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Élite Fitness club</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Élite Fitness Club</h1>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Más</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./clases.html">Clases</a></li>
+          <li><a class="dropdown-item" href="#">Contacto</a></li>
+          <li><a class="dropdown-item" href="#">Entrenadores</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link inactive" aria-current="page" href="">Blog Fitness</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="hero-container position-relative">
+    <video autoplay muted loop class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover z-n1">
+      <source src="assets/img/GimnasioElite.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+
+    <div id="hero-overlay"
+      class="overlay d-flex flex-column justify-content-center align-items-center text-white text-center h-100 w-100">
+      <h1 class="display-3">¡Bienvenido a Élite Fitness Club!</h1>
+      <p class="lead">Transformá tu cuerpo, mente y estilo de vida</p>
+      <a href="#" class="btn btn-danger mt-3">Conocé más</a>
+    </div>
+
+  </section>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Clases Destacadas</h2>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/yoga.jpg" class="card-img-top" alt="Yoga">
+          <div class="card-body">
+            <h5 class="card-title">Yoga</h5>
+            <p class="card-text">Relajación y flexibilidad.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/zumba.jpg" class="card-img-top" alt="Zumba">
+          <div class="card-body">
+            <h5 class="card-title">Zumba</h5>
+            <p class="card-text">Baile y diversión asegurada</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/crossfit.jpg" class="card-img-top" alt="Crossfit">
+          <div class="card-body">
+            <h5 class="card-title">Crossfit</h5>
+            <p class="card-text">Combina fuerza, resistencia y velocidad</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/musculacion.jpg" class="card-img-top" alt="Musculación">
+          <div class="card-body">
+            <h5 class="card-title">Musculación</h5>
+            <p class="card-text">Mejorá tu fuerza y tonificá tu cuerpo</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/boxing.jpg" class="card-img-top" alt="Boxeo">
+          <div class="card-body">
+            <h5 class="card-title">Boxeo</h5>
+            <p class="card-text">Energía, cardio y técnica.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card clase-card h-100 text-center">
+          <img src="assets/img/pilates.jpg" class="card-img-top" alt="Pilates">
+          <div class="card-body">
+            <h5 class="card-title">Pilates</h5>
+            <p class="card-text">Postura y flexibilidad con ejercicios suaves</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contador -->
+
+  <section class="container text-center my-5">
+    <h2 class="mb-4">Nuestros Logros</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="counter" data-target="500">0</h3>
+        <p>Clientes felices</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter" data-target="120">0</h3>
+        <p>Clases por semana</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter" data-target="30">0</h3>
+        <p>Entrenadores</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="counter" data-target="10">0</h3>
+        <p>Años de experiencia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrousel -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/testimonio1.jpg" class="d-block w-100" alt="Tomas mazza"
+          style="object-fit: cover; height: 600px;">
+        <div class="carousel-caption d-sm-block d-md-block">
+          <h5>Tomás Mazza</h5>
+          <p>"Desde que me uní a Élite Fitness Club, he notado una mejora impresionante en mi rendimiento físico. Los
+            entrenadores están siempre dispuestos a ayudarme y motivarme, y las instalaciones son de primera.
+            ¡Definitivamente el mejor lugar para ponerte en forma!"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/testimonio2.jpg" class="d-block w-100" alt="..."
+          style="object-fit: cover; height: 600px;">
+        <div class="carousel-caption d-sm-block d-md-block">
+          <h5>Pablo Gonçales</h5>
+          <p>"Nunca imaginé que disfrutaría tanto del ejercicio hasta que comencé a asistir a las clases de Crossfit
+            aquí. El ambiente es increíble y el equipo de entrenadores se asegura de que cada entrenamiento sea
+            desafiante pero alcanzable. ¡Recomiendo 100% este lugar!"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/testimonio3.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 600px;">
+        <div class="carousel-caption d-sm-block d-md-block">
+          <h5>Silvia Álvarez</h5>
+          <p>"He probado muchos gimnasios, pero Élite Fitness Club es el único que realmente se preocupa por mis
+            objetivos personales. Me encanta la variedad de clases y la atención personalizada. ¡Es más que un gimnasio,
+            es una comunidad!"</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Formulario de contacto -->
+        <div class="col-md-6 mb-4">
+          <h5>Contacto</h5>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Por favor ingrese un correo válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+              <div class="invalid-feedback">Por favor ingrese un mensaje.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar
+              <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"
+                id="formSpinner"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-md-6 mb-4">
+          <h5>Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58235.35678862931!2d-65.38668915136715!3d-24.181908299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1744777169372!5m2!1ses!2sar"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+          <!-- Redes sociales -->
+    <div class="text-center mb-3">
+      <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+      <a href="https://wa.me/5493881234567" target="_blank" class="text-white mx-2">
+        <i class="bi bi-whatsapp fs-4"></i>
+      </a>
+    </div>
+      <hr class="border-light" />
+      <p class="text-center mb-0">&copy; 2025 Ignacio Martín. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
