@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/entrenadores.css">
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Élite Fitness club</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Élite Fitness Club</h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link inactive" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Más</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/clases.html">Clases</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    <li><a class="dropdown-item" href="/entrenadores.html">Entrenadores</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" aria-current="page" href="">Blog Fitness</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row g-4 justify-content-center">
+            <div class="carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/entrenador3.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Nicolás Ruíz</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Nicolás Ruíz</h5>
+                            <p>Especialista en fuerza y cardio</p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="70"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating1" id="star5-1">
+                                <label for="star5-1">★</label>
+                                <input type="radio" name="rating1" id="star4-1">
+                                <label for="star4-1">★</label>
+                                <input type="radio" name="rating1" id="star3-1">
+                                <label for="star3-1">★</label>
+                                <input type="radio" name="rating1" id="star2-1">
+                                <label for="star2-1">★</label>
+                                <input type="radio" name="rating1" id="star1-1">
+                                <label for="star1-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/entrenador4.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Gonzalo Martínez</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Gonzalo Martínez</h5>
+                            <p>Especialista en Nutrición y Musculación</p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="70"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="40"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating2" id="star5-2">
+                                <label for="star5-2">★</label>
+                                <input type="radio" name="rating2" id="star4-2">
+                                <label for="star4-2">★</label>
+                                <input type="radio" name="rating2" id="star3-2">
+                                <label for="star3-2">★</label>
+                                <input type="radio" name="rating2" id="star2-2">
+                                <label for="star2-2">★</label>
+                                <input type="radio" name="rating2" id="star1-2">
+                                <label for="star1-2">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/entrenador5.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Victoria González</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Victoria González</h5>
+                            <p>Especialista en Nutrición y Yoga</p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="60"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="100"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating3" id="star5-3">
+                                <label for="star5-3">★</label>
+                                <input type="radio" name="rating3" id="star4-3">
+                                <label for="star4-3">★</label>
+                                <input type="radio" name="rating3" id="star3-3">
+                                <label for="star3-3">★</label>
+                                <input type="radio" name="rating3" id="star2-3">
+                                <label for="star2-3">★</label>
+                                <input type="radio" name="rating3" id="star1-3">
+                                <label for="star1-3">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/entrenador6.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Ana Terrazas</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Ana Terrazas</h5>
+                            <p>Personal Trainer especialista en cardio </p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="70"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating4" id="star5-4">
+                                <label for="star5-4">★</label>
+                                <input type="radio" name="rating4" id="star4-4">
+                                <label for="star4-4">★</label>
+                                <input type="radio" name="rating4" id="star3-4">
+                                <label for="star3-4">★</label>
+                                <input type="radio" name="rating4" id="star2-4">
+                                <label for="star2-4">★</label>
+                                <input type="radio" name="rating4" id="star1-4">
+                                <label for="star1-4">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/matiasRomero.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Matías Romero</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Matías Romero</h5>
+                            <p>Boxeador profesional</p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="80"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating5" id="star5-5">
+                                <label for="star5-5">★</label>
+                                <input type="radio" name="rating5" id="star4-5">
+                                <label for="star4-5">★</label>
+                                <input type="radio" name="rating5" id="star3-5">
+                                <label for="star3-5">★</label>
+                                <input type="radio" name="rating5" id="star2-5">
+                                <label for="star2-5">★</label>
+                                <input type="radio" name="rating5" id="star1-5">
+                                <label for="star1-5">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" carta col-md-4 col-lg-4">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <!-- Frente -->
+                        <div class="card-front text-center p-4">
+                            <img src="assets/img/juanPerez.jpg" class="img-fluid mb-3" alt="Entrenador 1" />
+                            <h5 class="mb-0">Juan Perez</h5>
+                        </div>
+
+                        <!-- Dorso -->
+                        <div class="card-back text-center p-4">
+                            <h5>Juan Perez</h5>
+                            <p>Profesional de Spinning y Musculación</p>
+                            <div class="mb-2 text-start">
+                                <label>Fuerza</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" data-skill="70"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Cardio</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" data-skill="50"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-start">
+                                <label>Flexibilidad</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" data-skill="60"></div>
+                                </div>
+                            </div>
+                            <div class="rating mt-3">
+                                <input type="radio" name="rating6" id="star5-6">
+                                <label for="star5-6">★</label>
+                                <input type="radio" name="rating6" id="star4-6">
+                                <label for="star4-6">★</label>
+                                <input type="radio" name="rating6" id="star3-6">
+                                <label for="star3-6">★</label>
+                                <input type="radio" name="rating6" id="star2-6">
+                                <label for="star2-6">★</label>
+                                <input type="radio" name="rating6" id="star1-6">
+                                <label for="star1-6">★</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Formulario de contacto -->
+                <div class="col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor ingrese un correo válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                            <div class="invalid-feedback">Por favor ingrese un mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Enviar
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"
+                                id="formSpinner"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-md-6 mb-4">
+                    <h5>Ubicación</h5>
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58235.35678862931!2d-65.38668915136715!3d-24.181908299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1744777169372!5m2!1ses!2sar"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="text-center mb-3">
+                <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+                <a href="https://wa.me/5493881234567" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                </a>
+            </div>
+            <hr class="border-light" />
+            <p class="text-center mb-0">&copy; 2025 Ignacio Martín. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/entrenadores.js"></script>
+</body>
+
+</html>
