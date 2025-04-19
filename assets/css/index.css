@@ -54,13 +54,13 @@ video {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5); /* semi-transparente */
+  background: rgba(0, 0, 0, 0.5); 
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
   padding: 2rem;
-  display: none; /* oculto al inicio para la animación */
+  display: none; 
   transform: translateY(-40px);
   transition: all 1s ease;
   padding: 2rem;

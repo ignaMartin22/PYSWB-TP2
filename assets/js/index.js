@@ -1,6 +1,5 @@
 // Animación de navbar
 $(document).ready(function () {
-    // Al pasar el ratón por encima del item 'Nosotros', mostramos el dropdown con un efecto fade
     $('.nav-item.dropdown').hover(
       function () {
         $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);  // Desvanecer para mostrar
@@ -36,7 +35,7 @@ $(document).ready(function () {
   // Animación de contador
   $(document).ready(function () {
     $('.counter').each(function () {
-      const $this = $(this); //Iteraciones
+      const $this = $(this); 
       const target = +$this.data('target'); // número objetivo
       let count = 0;
   
@@ -50,17 +49,17 @@ $(document).ready(function () {
         }
   
         $this.text(count);
-      }, 30); // velocidad
+      }, 30); 
     });
   });
 
   //Carousel
   var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
-    interval: 3000,  // Intervalo de 3 segundos
-    ride: 'carousel' // Hace que el carrusel se inicie automáticamente
+    interval: 3000,  
+    ride: 'carousel'
   });
 
-   // Bootstrap validation + Spinner con jQuery
+   // Bootstrap validation y Spinner con jQuery
    $(document).ready(function () {
     $('#contactForm').on('submit', function (e) {
       e.preventDefault();
@@ -71,7 +70,6 @@ $(document).ready(function () {
       } else {
         $('#formSpinner').removeClass('d-none'); // Mostrar spinner
 
-        // Simulación de envío
         setTimeout(function () {
           $('#formSpinner').addClass('d-none'); // Ocultar spinner
           alert('¡Formulario enviado con éxito!');

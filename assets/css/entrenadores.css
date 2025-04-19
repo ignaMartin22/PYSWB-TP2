@@ -31,7 +31,7 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: 0.5rem;
-  color: #212529; /* para mejor contraste con fondo claro */
+  color: #212529; 
 
 }
 
@@ -71,12 +71,12 @@
 .rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
-  color: gold; /* Color de las estrellas seleccionadas o al pasar el mouse */
+  color: gold; 
 }
 
 .rating input:checked ~ label:hover,
 .rating input:checked ~ label:hover ~ label {
-  color: #ffcc00; /* Color más brillante al pasar el mouse sobre estrellas seleccionadas */
+  color: #ffcc00; 
 }
 img{
   height: 500px;
