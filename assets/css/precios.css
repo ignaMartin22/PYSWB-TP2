@@ -1,0 +1,29 @@
+/* Estilo para la fila y columna resaltada */
+.highlight-row {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .highlight-col {
+    background-color: rgba(40, 167, 69, 0.1);
+  }
+  
+  .toggle-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+ 
+.toggle-container .form-check-input {
+    margin-top: 10px;
+    transform: scale(1.5); 
+    cursor: pointer;
+    background-color: #e45e57;
+    border-color: black;
+  }
+  
+  
