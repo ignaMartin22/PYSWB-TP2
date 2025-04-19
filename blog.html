@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <title>Blog Fitness</title>
+</head>
+
+<body>
+  <nav>
+    <h1>Élite Fitness Club</h1>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link inactive" aria-current="page" href="./index.html">Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Más</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/clases.html">Clases</a></li>
+          <li><a class="dropdown-item" href="/formulario.html">Contacto</a></li>
+          <li><a class="dropdown-item" href="/entrenadores.html">Entrenadores</a></li>
+          <li><a class="dropdown-item" href="/precios.html">Precios y suscripciones </a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="">Blog Fitness</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="mb-4">
+      <button class="filter-btn btn btn-custom" data-filter="fitness">Fitness</button>
+      <button class="filter-btn btn btn-custom" data-filter="nutrition">Nutrición</button>
+      <button class="filter-btn btn btn-custom" data-filter="health">Salud</button>
+      <button class="filter-btn btn btn-custom" data-filter="all">Todos</button>
+    </div>
+
+    <div class="row">
+      <!-- Artículos -->
+      <div class="col-md-9">
+        <div class="grid-container">
+          <div class="grid-item article" data-tags="fitness nutrition">
+            <div class="article-content" data-aos="fade-up">
+              <h2>5 Consejos para Mejorar tu Resistencia en el Gimnasio</h2>
+              <p>Si estás buscando mejorar tu resistencia, aquí tienes algunos consejos para optimizar tus
+                entrenamientos...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="J"></div>
+                  <div class="content">
+                    <p><strong>Juan:</strong> ¡Gran artículo! Lo probaré en mi rutina.</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="nutrition health">
+            <div class="article-content" data-aos="fade-up">
+              <h2>Alimentos para Acelerar tu Metabolismo</h2>
+              <p>Descubre qué alimentos puedes incorporar a tu dieta para ayudar a acelerar tu metabolismo y mejorar tu
+                salud general...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="A"></div>
+                  <div class="content">
+                    <p><strong>Ana:</strong> ¡Muy útil! Necesitaba saber más sobre nutrición.</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="health fitness">
+            <div class="article-content" data-aos="fade-up">
+              <h2>Cómo Combatir el Estrés con Ejercicio</h2>
+              <p>El ejercicio no solo te ayuda a mejorar tu físico, también es un gran aliado para combatir el estrés y
+                la ansiedad...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="R"></div>
+                  <div class="content">
+                    <p><strong>Roberto:</strong> Definitivamente voy a incorporar más ejercicio en mi rutina.</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="nutrition">
+            <div class="article-content" data-aos="fade-up">
+              <h2>La Importancia de las Proteínas en tu Dieta</h2>
+              <p>Las proteínas son esenciales para la reparación muscular y la creación de nuevas células. Aprende cómo
+                puedes incorporar más proteínas en tu dieta...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="L"></div>
+                  <div class="content">
+                    <p><strong>Lucía:</strong> ¡Esto es justo lo que necesitaba saber! Muy informativo.</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="fitness">
+            <div class="article-content" data-aos="fade-up">
+              <h2>Rutina de Cardio para Principiantes</h2>
+              <p>Si estás comenzando con el cardio, aquí tienes una rutina perfecta para principiantes que te ayudará a
+                mejorar tu condición física...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="C"></div>
+                  <div class="content">
+                    <p><strong>Carlos:</strong> Esta rutina parece genial, la probaré mañana.</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="health fitness">
+            <div class="article-content" data-aos="fade-up">
+              <h2>Beneficios de la Hidratación para tu Salud</h2>
+              <p>El agua es esencial para nuestro bienestar general. Descubre cómo mantenerte bien hidratado puede
+                mejorar tu rendimiento y salud...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="P"></div>
+                  <div class="content">
+                    <p><strong>Patricia:</strong> Siempre olvido beber suficiente agua, ¡esto me recuerda la
+                      importancia!</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item article" data-tags="nutrition health">
+            <div class="article-content" data-aos="fade-up">
+              <h2>Vitaminas Esenciales para tu Bienestar</h2>
+              <p>Descubre las vitaminas que tu cuerpo necesita para mantenerse en óptimas condiciones y cómo puedes
+                obtenerlas de manera natural...</p>
+              <div class="comments">
+                <div class="comment">
+                  <div class="avatar" data-avatar="F"></div>
+                  <div class="content">
+                    <p><strong>Fernando:</strong> Muy interesante. ¡Voy a mejorar mi dieta con estos consejos!</p>
+                    <button class="reply-btn btn btn-outline-success btn-sm">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Formulario de contacto -->
+        <div class="col-md-6 mb-4">
+          <h5>Contacto</h5>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Por favor ingrese un correo válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+              <div class="invalid-feedback">Por favor ingrese un mensaje.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar
+              <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"
+                id="formSpinner"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-md-6 mb-4">
+          <h5>Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58235.35678862931!2d-65.38668915136715!3d-24.181908299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1744777169372!5m2!1ses!2sar"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="text-center mb-3">
+        <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+          <i class="bi bi-facebook fs-4"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+          <i class="bi bi-instagram fs-4"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+          <i class="bi bi-twitter fs-4"></i>
+        </a>
+        <a href="https://wa.me/5493881234567" target="_blank" class="text-white mx-2">
+          <i class="bi bi-whatsapp fs-4"></i>
+        </a>
+      </div>
+      <hr class="border-light" />
+      <p class="text-center mb-0">&copy; 2025 Ignacio Martín. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.formulario{
+    background-color: #db4e4e;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.btn-custom{
+    background-color:white ;
+    color: #db4e4e;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-custom:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+.invalid-feedback{
+    color: white;
+    font-weight: 500;
+}

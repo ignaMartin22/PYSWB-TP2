@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/clases.css">
+    <link rel="stylesheet" href="assets/css/formulario.css">
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Élite Fitness club</title>
+    
+    <title>Fomulario de Contacto</title>
 </head>
-
 <body>
-
     <nav>
         <h1>Élite Fitness Club</h1>
         <ul class="nav nav-tabs">
@@ -26,7 +24,7 @@
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                     aria-expanded="false">Más</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/clases.html">Clases</a></li>
+                    <li><a class="dropdown-item " href="/clases.html">Clases</a></li>
                     <li><a class="dropdown-item" href="/formulario.html">Contacto</a></li>
                     <li><a class="dropdown-item" href="/entrenadores.html">Entrenadores</a></li>
                     <li><a class="dropdown-item" href="/precios.html">Precios y suscripciones </a></li>
@@ -38,112 +36,52 @@
         </ul>
     </nav>
 
-    <h2 class="text-center mt-4">Nuestras clases</h2>
-    <div class="container text-center mb-4 btn-group">
-        <div id="filters" class="mb-4">
-            <button class="btn btn-primary filter" data-filter="all">Todas</button>
-            <button class="btn btn-primary filter" data-filter="fuerza">Fuerza</button>
-            <button class="btn btn-primary filter" data-filter="agilidad">Agilidad</button>
-            <button class="btn btn-primary filter" data-filter="cardio">Cardio</button>
+    <div class="container mt-5 formulario">
+        <h2 class="mb-4 text-center text-white">Formulario de Contacto</h2>
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label text-white">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+            <div class="invalid-feedback">El nombre es obligatorio.</div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">Correo Electrónico</label>
+            <input type="email" class="form-control" id="mail" required>
+            <div class="invalid-feedback">Correo inválido.</div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="mensaje" class="form-label text-white">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">Por favor escribí un mensaje.</div>
+          </div>
+    
+          <button type="submit" class="btn btn-custom">Enviar</button>
+          <div class="spinner-border text-primary ms-3 d-none" role="status" id="spinner">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
+        </form>
+      </div>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Mensaje Enviado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              ¡Gracias por contactarte con nosotros! Te responderemos a la brevedad.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <!--Galeria de imagenes masonry-->
-
-    <div class="row gallery">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item fuerza">
-            <img src="/assets/img/boxing.jpg" class="img-fluid" alt="Boxeo">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
-            <img src="/assets/img/zumba.jpg" class="img-fluid" alt="zumba1">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
-            <img src="/assets/img/spinning.jpg" class="img-fluid" alt="spinning">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
-            <img src="/assets/img/funcional.jpg" class="img-fluid" alt="funcional">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item cardio">
-            <img src="assets/img/zumba2.jpg" class="img-fluid" alt="zumba 2">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item agilidad">
-            <img src="assets/img/yoga.jpg" class="img-fluid" alt="yoga">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item agilidad">
-            <img src="assets/img/pilates.jpg" class="img-fluid" alt="pilates">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 image-item fuerza">
-            <img src="assets/img/musculacion.jpg" class="img-fluid" alt="musculacion">
-        </div>
-    </div>
-
-    <!-- Tabla responsive -->
-
-    <div class="container mt-4">
-        <h2 class="text-center">Horarios de Clases</h2>
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Día</th>
-                        <th>08:00</th>
-                        <th>10:00</th>
-                        <th>12:00</th>
-                        <th>16:00</th>
-                        <th>18:00</th>
-                        <th>20:00</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>Yoga</td>
-                        <td>Zumba</td>
-                        <td></td>
-                        <td>Spinning</td>
-                        <td>Boxeo</td>
-                        <td>Funcional</td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td></td>
-                        <td>Cardio</td>
-                        <td>Musculación</td>
-                        <td></td>
-                        <td>Boxeo</td>
-                        <td>Pilates</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>Yoga</td>
-                        <td></td>
-                        <td>Spinning</td>
-                        <td>Cardio</td>
-                        <td>Boxeo</td>
-                        <td>Musculación</td>
-                    </tr>
-                    <tr>
-                        <td>Jueves</td>
-                        <td>Cardio</td>
-                        <td></td>
-                        <td>Yoga</td>
-                        <td>Spinning</td>
-                        <td>Musculación</td>
-                        <td>Boxeo</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>Pilates</td>
-                        <td></td>
-                        <td>Spinning</td>
-                        <td>Yoga</td>
-                        <td>Boxeo</td>
-                        <td>Musculación</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+      </div>
+    
 
 
     <footer class="bg-dark text-white pt-4">
@@ -209,7 +147,6 @@
             <p class="text-center mb-0">&copy; 2025 Ignacio Martín. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="assets/js/clases.js"></script>
+    <script src="/assets/js/formulario.js"></script>
 </body>
 </html>
