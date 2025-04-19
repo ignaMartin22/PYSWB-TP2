@@ -13,7 +13,6 @@
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 1.5s ease-in-out;
-  backface-visibility: hidden;
 }
 
 
@@ -50,29 +49,35 @@
   width: 0%;
   transition: width 1s ease;
 }
-
 .rating {
-  direction: rtl;
-  unicode-bidi: bidi-override;
+  direction: rtl; 
+  unicode-bidi: bidi-override; 
+  display: inline-flex;
+  justify-content: center; 
 }
 
 .rating input {
-  display: none;
+  display: none; 
 }
 
 .rating label {
-  font-size: 1.5rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.3s;
+  pointer-events: auto;
+  font-size: 2rem;
+  color: #ccc; 
+  cursor: pointer; 
+  transition: color 0.3s ease;
 }
 
 .rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
-  color: gold;
+  color: gold; /* Color de las estrellas seleccionadas o al pasar el mouse */
 }
 
+.rating input:checked ~ label:hover,
+.rating input:checked ~ label:hover ~ label {
+  color: #ffcc00; /* Color más brillante al pasar el mouse sobre estrellas seleccionadas */
+}
 img{
   height: 500px;
   width: 500px;
